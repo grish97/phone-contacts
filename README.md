@@ -12,8 +12,9 @@
 > Yup
 
 App used Redux Toolkit which helps to save all app data in one global state. <br /> 
-All API request make using ***createAsyncThunk*** method of Redux Toolkit. <br />
-App data saved in ***localStorage***. All operations related storage make by ***Cache Service***  
+All API request made using ***createAsyncThunk*** method of Redux Toolkit. <br />
+App data saved in ***localStorage***. <br />
+All operations related storage made by ***Cache Service***  
 
 ## Run Project
 ```bash
