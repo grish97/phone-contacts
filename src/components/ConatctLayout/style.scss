@@ -1,0 +1,16 @@
+.contact-layout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 450px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background-color: white;
+  }
+}

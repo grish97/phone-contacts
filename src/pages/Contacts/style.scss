@@ -1,0 +1,98 @@
+$header_height: 30px;
+$toolbar_height: 50px;
+
+$contact_profile_icon_width: 40px;
+$contact_actions_width: 65px;
+
+.contacts-conatiner {
+  height: 100%;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header_height;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .list {
+    padding: 10px 0;
+    height: calc(100% - #{$header_height} - #{$toolbar_height});
+    overflow: auto;
+
+    .list-item {
+      display: flex;
+      align-items: center;
+
+      .profile-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $contact_profile_icon_width;
+        height: $contact_profile_icon_width;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 2px solid #b196d7;
+        color: #b196d7;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      .info {
+        width: calc(
+          100% - #{$contact_profile_icon_width} - #{$contact_actions_width} -
+            10px
+        );
+
+        .c-phone-number {
+          font-size: 13px;
+          color: #2125299e;
+        }
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+        width: $contact_actions_width;
+
+        img {
+          display: none;
+          width: 15px;
+          height: 15px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      &:hover {
+        .actions img {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    height: $toolbar_height;
+
+    img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}
